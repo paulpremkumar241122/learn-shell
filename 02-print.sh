@@ -26,5 +26,5 @@ echo -e "\e[35m HELLO IN MAGENTA COLOUR \e[0m"
 
 echo -e "\e[36m HELLO IN CYAN COLOUR \e[0m"
 
-echo "\e[33m #\e[33m# \e[0m"
+
 
