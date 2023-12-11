@@ -5,4 +5,4 @@ Topics of shell Scripting
 
 1. Comments
 2. Printing
-3. etc
+3. Variables 
