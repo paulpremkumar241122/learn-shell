@@ -1,0 +1,3 @@
+# To print a message there are lot of commands but ( echo ) is widely used ...
+
+echo Hello World
