@@ -14,4 +14,4 @@ echo Hello World
 
 # RED {31}, GREEN {32}, YELLOW{33}, BLUE {34}, MAGENTA {35}, CYAN {36}
 
-echo -e "\e[31mHELLO IN RED COLOUR\e[0m"
+echo -e "\e[31m HELLO IN RED COLOUR \e[0m"
