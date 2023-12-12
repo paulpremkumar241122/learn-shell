@@ -1,0 +1,51 @@
+# search and replace a word (s)
+# delete some lines (d)
+# add some lines (a)
+##########################################################
+
+#***************** SEARCH AND REPLACE *************
+head /ete/passwd3
+head /ect/passwd >/tmp/passwd
+cat >/tmp/passwd
+sed 's/nologin/yeslogin/' /tmp/passwd
+
+# here (sed) command changing the output and showing on the screen but not saving the file
+
+# for editing use (sed -i)
+#EX------
+sed -i 's/nologin/yeslogin' /tmp/passwd
+cat /tmp/passwd
+
+# here sed -i 's'
+#after the last 's' we can use / SLASH is mostly used ...
+#in the place of slash if we use / sometimes it might become an error or conflict
+# so in the place of slash / we can use any ? | # or any symbols ...
+
+# EX - sed 's?/sbin/yeslogin?/bin/nologin' /tmp/passwd
+
+#######################################################################
+
+Deleting some lines
+
+sed '3d' /tmp/passwd --------- the 3rd line of /tmp/passwd will be deleted.
+in case if you dont know the lone number if the line contains any words based
+on that words we can delete those particular lines
+
+#ex ------ sed '/yeslogin/ d' /tmp/passwd
+
+those lines which has yeslogin will be deleted
+
+############################################################################
+
+Adding lines
+
+#EX------sed '/yeslogin/ a Hello world' /tmp/passwd
+
+in all the content file of /tmp/passwd .... the lines which has /yeslogin/ will be deleted and Hello word will be added.
+
+
+for suppose we need to change the 5th line only . deleting the line and adding
+
+NOTE. (5) it will be added after the 5th line
+
+#ex----- sed '5 a Hello World' /tmp/passwd
