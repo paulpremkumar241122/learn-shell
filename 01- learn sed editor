@@ -49,3 +49,10 @@ for suppose we need to change the 5th line only . deleting the line and adding
 NOTE. (5) it will be added after the 5th line
 
 #ex----- sed '5 a Hello World' /tmp/passwd
+
+
+***********************
+
+sed -i -e is used in Project
+
+By giving -e we can give multiple commands in same sed command line...
