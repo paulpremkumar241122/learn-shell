@@ -13,7 +13,7 @@ sed 's/nologin/yeslogin/' /tmp/passwd
 
 # for editing use (sed -i)
 #EX------
-sed -i 's/nologin/yeslogin' /tmp/passwd
+sed -i 's/nologin/yeslogin/' /tmp/passwd
 cat /tmp/passwd
 
 # here sed -i 's'
