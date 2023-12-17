@@ -1,0 +1,26 @@
+# Exit Status
+
+
+every command we run on shell gives some status .
+It is called as exit status of a particular command given .
+
+very exit command gives a value that ranges between 0-255
+
+# these numbers are categorized into 2 types
+$ success & $ failure
+
+here the value (0) denotes success
+
+and the rest (1-255) denotes failure.
+
+*************************************
+
+In the shell scripting to Refer the Exit Status of the latest command Executed
+we can refer a variable ?.
+
+to see the status we can use
+
+echo $?
+
+it will show the status as soon as the command is executed .
+
