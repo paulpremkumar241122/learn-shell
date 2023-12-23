@@ -4,7 +4,7 @@
 every command we run on shell gives some status .
 It is called as exit status of a particular command given .
 
-very exit command gives a value that ranges between 0-255
+Every exit command gives a value that ranges between 0-255
 
 # these numbers are categorized into 2 types
 $ success & $ failure
